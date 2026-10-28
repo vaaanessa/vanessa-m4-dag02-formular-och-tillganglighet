@@ -24,7 +24,37 @@
         markerade med * är obligatoriska.
       </p>
       <form action="#" method="post">
-        <!-- TODO 1: fält för namn, e-post, telefon, datum (label + input med for/id) -->
+        <div class="falt">
+          <label for="namn">Namn *</label>
+          <input
+            type="text"
+            id="namn"
+            name="namn"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="falt">
+          <label for="epost">E-postadress *</label>
+          <input
+            type="email"
+            id="epost"
+            name="epost"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="falt">
+          <label for="telefon">Telefon (valfritt)</label>
+          <input type="tel" id="telefon" name="telefon" autocomplete="tel" />
+        </div>
+
+        <div class="falt">
+          <label for="datum">Datum *</label>
+          <input type="date" id="datum" name="datum" required />
+        </div>
         <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
