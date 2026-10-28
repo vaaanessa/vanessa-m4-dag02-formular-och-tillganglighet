@@ -55,6 +55,22 @@
           <label for="datum">Datum *</label>
           <input type="date" id="datum" name="datum" required />
         </div>
+
+        <div class="falt">
+          <label for="antal">Antal personer *</label>
+          <select name="antal" id="antal" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 eller fler</option>
+          </select>
+        </div>
+        <div class="falt">
+          <label for="onskemal">Övriga önskemål</label>
+          <textarea name="onskemal" id="onskemal"></textarea>
+        </div>
+
         <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
