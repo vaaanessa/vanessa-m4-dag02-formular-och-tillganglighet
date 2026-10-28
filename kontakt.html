@@ -66,12 +66,60 @@
             <option value="5">5 eller fler</option>
           </select>
         </div>
+
+        <fieldset>
+          <legend>Kostönskemål</legend>
+
+          <input
+            type="checkbox"
+            id="vegetarisk"
+            name="kost"
+            value="vegetarisk"
+          />
+          <label for="vegetarisk">Vegetarisk</label>
+
+          <input type="checkbox" id="vegansk" name="kost" value="vegansk" />
+          <label for="vegansk">Vegansk</label>
+
+          <input type="checkbox" id="glutenfri" name="kost" value="glutenfri" />
+          <label for="glutenfri">Glutenfri</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hur vill du få bekräftelsen? *</legend>
+
+          <input
+            type="radio"
+            id="svar-epost"
+            name="svar"
+            value="epost"
+            required
+          />
+          <label for="svar-epost">E-post</label>
+
+          <input type="radio" id="svar-sms" name="svar" value="sms" required />
+          <label for="svar-sms">SMS</label>
+        </fieldset>
+
         <div class="falt">
           <label for="onskemal">Övriga önskemål</label>
           <textarea name="onskemal" id="onskemal"></textarea>
         </div>
 
-        <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
+        <div class="falt">
+          <input
+            type="checkbox"
+            id="samtycke"
+            name="samtycke"
+            value="ja"
+            required
+          />
+          <label for="samtycke"
+            >Jag godkänner att Kafé Kardemumma sparar mina uppgifter för
+            bokningen. *</label
+          >
+        </div>
+
         <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
         <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
       </form>
